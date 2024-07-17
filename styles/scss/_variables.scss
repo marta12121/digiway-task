@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+$color-background: #F6F5F2;
+$color-text: rgba(43,
+63,
+91,
+1);
+$color-style2: rgba(255,
+255,
+255,
+1);
+$color-style3:rgba(204,
+142,
+30,
+1);
+$font-style1:"Inter",
+sans-serif;
+$font-style2: "Oranienbaum",
+serif;
+@mixin btn-styles {
+    background: rgba(204, 142, 30, 0.1);
+    border: 0.5px solid rgba(204, 142, 30, 1);
+    color: rgba(204, 142, 30, 1);
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// .browser {
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+// }

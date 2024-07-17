@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI WAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header__logo">
+            <button class="hamburger"><img src="./images/logo.png" alt="logo" height="auto" /></button>
+        </div>
+        <nav>
+            <ul class="center_menu">
+                <li><a href="#" class="center_menu-item">Nasi Lekarse</a></li>
+                <li><a href="#" class="center_menu-item">Kontakt</a></li>
+                <li><a href="#" class="center_menu-item">Programs <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#" class="center_menu-item">O nas <i class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+        </nav>
+        <div class="right_block">
+            <img src="./images/login_icon.png" alt="Logo">
+            <button type="button" value="Skontaktuj się z nami" class="contact-btn">Skontaktuj się z nami</button>
+            <div class="lang-block">
+                <span id="lang-list">PL <i class="fa-solid fa-angle-down"></i></span>
+                <ul class="lang_menu">
+                    <li>EN</li>
+                    <li>UA</li>
+                </ul>
+            </div>
+            <button class="theme-btn"><img src="./images/sun.png" alt="Day Theme Icon"></button>
+            <button class="theme-btn"><img src="./images/moon.png" alt="Night Theme Icon"></button>
+        </div>
+    </header>
+    <main>
+        <article class="section-sales">
+            <div class="sales-text">
+                <h1>Aкції та Акційні пакети</h1>
+                <p>Ми завжди прагнемо підвищити рівень сервісу надаваних медичних послуг, і вдячні вам за залишений позитивний відгук. Ми беремо до уваги всі коментарі та побажання, які відносяться до нашої роботи. Дякуємо за ваш вибір.</p>
+            </div>
+            <div class="sales-img"></div>
+        </article>
+
+        <article class="section-package">
+            <h1>Пакети</h1>
+            <div class="packages">
+                <section class="pack-desc">
+                    <h3>УЗД всього організму для жінок</h3>
+                    <ul type="none">
+                        <li>УЗД всього організму для жінок</li>
+                        <li>Щитовидна залоза</li>
+                        <li>Молочні залози</li>
+                        <li>Органи черевної порожнини ( печінка, жовчний міхур, підшлункова залоза, селезінка)</li>
+                        <li>Нирки та наднирокові залози</li>
+                        <li>Органи малого тазу</li>
+                        <li>Ціна — <s>2600</s> грн.</li>
+                        <li>Ціна по акції — 1280 грн</li>
+                    </ul>
+                    <input type="button" value="Переглянути детальніше">
+                </section>
+                <section class="pack-desc">
+                    <h3>УЗД всього організму для жінок</h3>
+                    <ul type="none">
+                        <li>УЗД всього організму для жінок</li>
+                        <li>Щитовидна залоза</li>
+                        <li>Молочні залози</li>
+                        <li>Органи черевної порожнини ( печінка, жовчний міхур, підшлункова залоза, селезінка)</li>
+                        <li>Нирки та наднирокові залози</li>
+                        <li>Органи малого тазу</li>
+                        <li>Ціна — <s>2600</s> грн.</li>
+                        <li>Ціна по акції — 1280 грн</li>
+                    </ul>
+                    <input type="button" value="Переглянути детальніше">
+                </section>
+                <section class="pack-desc">
+                    <h3>УЗД всього організму для жінок</h3>
+                    <ul type="none">
+                        <li>УЗД всього організму для жінок</li>
+                        <li>Щитовидна залоза</li>
+                        <li>Молочні залози</li>
+                        <li>Органи черевної порожнини ( печінка, жовчний міхур, підшлункова залоза, селезінка)</li>
+                        <li>Нирки та наднирокові залози</li>
+                        <li>Органи малого тазу</li>
+                        <li>Ціна — <s>2600</s> грн.</li>
+                        <li>Ціна по акції — 1280 грн</li>
+                    </ul>
+                    <input type="button" value="Переглянути детальніше">
+                </section>
+            </div>
+        </article>
+        <article class="section-discounts">
+            <h1>Акційні пропозиції</h1>
+            <div class="discounts">
+                <section class="discounts-slider">
+                    <div class="slider">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/rengen.png"></div>
+                                <div class="swiper-slide"><img src="images/rengen.png"></div>
+                                <div class="swiper-slide"><img src="images/rengen.png"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="text-slider">
+                            <h2>Акція "-40% на пробне заняття з кінезітерапії"</h2>
+                            <p>Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією вартістю 680 408 грн.</p>
+                            <input type="button" value="Переглянути детальніше">
+                        </div>
+                    </div>
+                </section>
+                <section class="discounts-form">
+                    <form action="#POST">
+                        <h2>Czekamy na Ciebie!</h2>
+                        <input type="text" value="Agnieszka Kowalczyk">
+                        <input type="tel" placeholder="+48 XXX XXX XXX">
+                        <input type="email" name="" id="" placeholder="name@gmail.com">
+                        <label for="check"><input type="checkbox" name="" id="check" checked> Wypełnienie formularza zgłoszeniowego jest równoznaczne z wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie newslettera, oraz kontakt telefoniczny</label>
+                        <input type="button" value="Wyślij">
+                    </form>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
