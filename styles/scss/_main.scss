@@ -8,13 +8,37 @@ body {
     background-color: $color-background;
 }
 
-header {
+header,
+footer {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
     font-family: $font-style1;
+}
+
+article {
+    margin-top: 30px;
+    h1 {
+        font-family: $font-style2;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $font-style1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 nav>.center_menu {
@@ -105,22 +129,6 @@ main {
     order: 0;
     width: 35%;
     @include flex-column;
-    h1 {
-        font-family: $font-style2;
-        text-transform: uppercase;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 48px;
-        text-align: left;
-    }
-    p {
-        font-family: $font-style1;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-        margin-top: 20px;
-    }
 }
 
 .section-sales {
@@ -133,15 +141,6 @@ main {
 // main-block-packages
 .section-package {
     margin-top: 20px;
-    h1 {
-        font-family: $font-style2;
-        text-transform: uppercase;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 48px;
-        text-align: left;
-        margin-bottom: 40px;
-    }
     .packages {
         display: flex;
         justify-content: space-between;
@@ -179,17 +178,6 @@ main {
 
 //section-discounts
 .section-discounts {
-    margin-top: 30px;
-    h1 {
-        font-family: $font-style2;
-        text-transform: uppercase;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 48px;
-        text-align: left;
-        margin-top: 60px;
-        margin-bottom: 30px;
-    }
     .discounts {
         display: flex;
         justify-content: space-between;
@@ -204,15 +192,6 @@ main {
                 color: rgba(0, 0, 0, 1);
                 margin-bottom: 20px;
                 margin-top: 16px;
-            }
-            p {
-                font-family: $font-style1;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                text-align: left;
-                margin-top: 20px;
-                margin-bottom: 20px;
             }
             .slider {
                 @include flex-column;
@@ -286,6 +265,226 @@ main {
     }
 }
 
+.section-picelist {
+    .table-prices {
+        border: 1px solid rgba(204, 142, 30, 0.27);
+        background-color: rgba(255, 255, 255, 1);
+        padding-top: 4.4vh;
+        padding-bottom: 4.4vh;
+        padding-left: 5.625vw;
+        padding-right: 5.625vw;
+        table {
+            width: 100%;
+            font-family: $font-style2;
+            border-collapse: collapse;
+            .table-header>th {
+                padding: 1vw;
+                background-color: $color-style-table-th;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+            tr {
+                display: grid;
+                grid-template-columns: 0.5fr 2fr 0.75fr;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            td:nth-child(3) {
+                text-align: center;
+            }
+            td {
+                padding: 16px;
+                background-color: $color-style-table-td;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+        scroll-container {
+            display: block;
+            width: 100%;
+            height: 80vh;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            padding-right: 30px;
+        }
+        scroll-page {
+            height: 80vh;
+            font-size: 5em;
+        }
+        scroll-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        scroll-container::-webkit-scrollbar-track {
+            background: rgba(246, 245, 242, 1);
+            border-radius: 10px;
+        }
+        scroll-container::-webkit-scrollbar-thumb {
+            background: rgba(204, 142, 30, 1);
+            border-radius: 10px;
+        }
+    }
+}
+
+.section-logotext {
+    padding: 6vw 18.3vw 6vw 18.3vw;
+    box-sizing: border-box;
+    .logo-text {
+        margin: 0 auto;
+        width: 70%;
+        background-image: url(../../images/logo.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        p {
+            font-family: $font-style2;
+            font-size: 3.2vw;
+            font-weight: 400;
+            line-height: 45px;
+            margin: 0;
+        }
+        p:nth-child(1) {
+            color: $color-style3;
+            text-align: left;
+        }
+        p:nth-child(2) {
+            color: rgba(0, 0, 0, 1);
+            text-align: center;
+        }
+        p:nth-child(3) {
+            color: $color-style3;
+            text-align: right;
+        }
+    }
+}
+
+.section-contact {
+    .contacts {
+        padding-left: 5.625vw;
+        padding-right: 5.625vw;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contact-phone .phone-number,
+        .contact-email .email {
+            font-family: $font-style2;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 35.2px;
+            text-align: left;
+        }
+        .contact-phone .timetable {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+        }
+        .contact-email .socials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-map {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            height: 368px;
+            width: 387px;
+            background-image: url(../../images/Warszawa_map.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            p {
+                color: rgba(255, 255, 255, 1);
+            }
+            .contact-map-text {
+                margin-left: 60px;
+            }
+            .address {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .full-address {
+                    font-family: $font-style2;
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: 35.2px;
+                    text-align: left;
+                }
+                img {
+                    margin-top: 30px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 11vh;
+    margin-bottom: 5vh;
+    display: flex;
+    gap: 1.6vw;
+    .footer-text {
+        flex: 1;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    .footer-nav {
+        flex: 1;
+        @include flex-column;
+        gap: 1em;
+        nav>a {
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: rgba(204, 142, 30, 1);
+            margin-right: 1em;
+        }
+        .socials {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1em;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+    .footer-p {
+        flex: 1;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+    .footer-menu {
+        flex: 1;
+        align-self: flex-end;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            list-style-type: none;
+            li {
+                color: $color-style3;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+// slider
 .swiper {
     width: 60vw;
     height: 100%;
@@ -375,4 +574,63 @@ div.swiper-button-prev {
         flex-wrap: wrap;
     }
     //section-discounts
+}
+
+@media screen and (max-width: 450px) {
+    .hamburger {
+        top: 1.2rem;
+    }
+    .hamburger>img {
+        width: 10vw;
+        height: auto;
+    }
+    .sales-img {
+        height: 30vh;
+    }
+    .section-picelist {
+        .table-prices {
+            table {
+                .table-header>th {
+                    font-size: 5.5vw;
+                }
+                td {
+                    font-size: 4.4vw;
+                }
+            }
+        }
+    }
+    .section-logotext {
+        .logo-text {
+            background: none;
+            width: 100%;
+            p {
+                font-family: $font-style2;
+                font-size: 5.5vw;
+                font-weight: 400;
+                line-height: 35px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .contacts {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .contacts {
+        height: auto;
+        transition: height 0.2s ease-out;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
